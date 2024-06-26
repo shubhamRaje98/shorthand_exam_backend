@@ -151,9 +151,9 @@ exports.updateAudioLogTime = async (req, res) => {
     }
 };
 
-const columnsToKeep = ['student_id',  'instituteId', 'batchNo', 'batchdate','fullname', 'subjectsId', 'courseId', 'batch_year', 'loggedin', 'done',       'PHOTO', 'center', 'Unnamed: 13'];
-const columnsToKeepsub = ['subjectId', 'courseId'];
-const columnsToKeepaud = ['subjectId'];
+const columnsToKeep = ['student_id',  'instituteId', 'qset', 'batchNo', 'batchdate','fullname', 'subjectsId', 'courseId', 'batch_year', 'loggedin', 'done',       'PHOTO', 'center', 'Unnamed: 13'];
+const columnsToKeepsub = ['subjectId', 'courseId', 'qset'];
+const columnsToKeepaud = ['subjectId', 'qset'];
 const columnsToKeepcontroller = ['center', 'batchNo', 'controller_code', 'controller_name',   'controller_contact', 'controller_email',    'district'];
 const columnsToKeepcenter = ['center','center_name','center_name','pc_count','max_pc']
 exports.getStudentDetails = async (req, res) => {
